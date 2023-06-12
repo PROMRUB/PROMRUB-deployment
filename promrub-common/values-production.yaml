@@ -1,0 +1,11 @@
+envAlias: prod
+domain: scb-api.promrub.its-software-services.com
+
+promrub-scb:
+  ingress:
+    enabled: false
+
+  pods:
+    env:
+      - name: DUMMY
+        value: "8080"

@@ -1,0 +1,11 @@
+promrub-scb:
+  enabled: true
+  nameOverride: promrub-scb
+
+  podDisruptionBudget:
+    enabled: false
+
+  pods:
+    controller: deployment
+    image:
+      name: asia-southeast1-docker.pkg.dev/promrub-personal-use/promrub/promrub-scb

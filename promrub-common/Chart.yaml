@@ -1,0 +1,16 @@
+apiVersion: v2
+name: helm-promrub
+description: A Helm chart for Promrub
+
+type: application
+
+version: 1.0.0
+
+appVersion: "1.0"
+
+dependencies:
+  - name: "generic-app"
+    alias: promrub-scb
+    condition: promrub-scb.enabled
+    repository: "https://charts.visonneau.fr/"
+    version: "0.0.14"
