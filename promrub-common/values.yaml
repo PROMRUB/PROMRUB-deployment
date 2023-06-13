@@ -23,12 +23,10 @@ promrub-scb:
 postgresql-scb:
   enabled: true
   fullnameOverride: postgresql-scb
-
   auth:
-    postgresPassword: admin1234983
     database: scb
-
-    #secretKeys:
-    #  adminPasswordKey: key
-    #postgresPassword: xxxx
+    existingSecret: scb-postgres-secret
+    secretKeys:
+      adminPasswordKey: adminPasswordKey
+    
 
