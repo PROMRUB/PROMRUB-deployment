@@ -1,0 +1,4 @@
+promrub-scb:
+  pods:
+    image:
+      tag: "main-9f1d46f"

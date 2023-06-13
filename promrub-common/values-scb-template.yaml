@@ -1,0 +1,4 @@
+promrub-scb:
+  pods:
+    image:
+      tag: "<<promrub-scb-image-tag>>"
