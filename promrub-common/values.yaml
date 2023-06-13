@@ -9,3 +9,5 @@ promrub-scb:
     controller: deployment
     image:
       name: asia-southeast1-docker.pkg.dev/promrub-personal-use/promrub/promrub-scb
+      pullSecrets:
+        - name: gcr-image-pull
