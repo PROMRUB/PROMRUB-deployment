@@ -28,5 +28,3 @@ postgresql-scb:
     existingSecret: scb-postgres-secret
     secretKeys:
       adminPasswordKey: adminPasswordKey
-    
-
