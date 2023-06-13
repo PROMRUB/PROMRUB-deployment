@@ -1,4 +1,4 @@
-envAlias: prod
+envAlias: development
 domain: scb-api.promrub.its-software-services.com
 
 promrub-scb:

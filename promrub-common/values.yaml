@@ -10,4 +10,4 @@ promrub-scb:
     image:
       name: asia-southeast1-docker.pkg.dev/promrub-personal-use/promrub/promrub-scb
     imagePullSecrets :
-      - name: gcr-image-pull
+      - name: gcr-image-pull # TODO : use External-Secret to create this
