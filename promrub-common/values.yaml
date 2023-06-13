@@ -11,3 +11,11 @@ promrub-scb:
       name: asia-southeast1-docker.pkg.dev/promrub-personal-use/promrub/promrub-scb
     imagePullSecrets :
       - name: gcr-image-pull # TODO : use External-Secret to create this
+
+  service:
+    enabled: true
+    ports:
+      - port: 80
+        targetPort: 80
+        protocol: TCP
+        name: http
