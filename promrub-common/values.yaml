@@ -19,3 +19,12 @@ promrub-scb:
         targetPort: 80
         protocol: TCP
         name: http
+
+postgresql-scb:
+  enabled: true
+  fullnameOverride: postgresql-scb
+
+  auth:
+    username: admin
+    password: admin1234983#jus34
+    database: scb
