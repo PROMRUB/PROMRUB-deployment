@@ -25,6 +25,7 @@ postgresql-scb:
   fullnameOverride: postgresql-scb
 
   auth:
-    username: admin
+    username: scb-svc
     password: admin1234983#jus34
+    postgresPassword: admin1234983
     database: scb
