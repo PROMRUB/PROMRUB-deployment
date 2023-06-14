@@ -18,7 +18,8 @@ promrub-scb:
           optional: false
     volumeMounts:
       - name: appsetting
-        mountPath: /app
+        mountPath: /app/appsettings.json
+        subPath: appsettings.json
 
   service:
     enabled: true
