@@ -11,6 +11,14 @@ promrub-scb:
       name: asia-southeast1-docker.pkg.dev/promrub-personal-use/promrub/promrub-scb
     imagePullSecrets :
       - name: gcr-image-pull # TODO : use External-Secret to create this
+    volumes:
+      - name: appsetting
+        secret:
+          secretName: scb-appsetting
+          optional: false
+    volumeMounts:
+      - name: appsetting
+        mountPath: /app
 
   service:
     enabled: true
