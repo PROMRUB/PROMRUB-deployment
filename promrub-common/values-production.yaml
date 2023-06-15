@@ -1,5 +1,5 @@
 envAlias: production
-domain: scb-api.promrub.its-software-services.com
+domain: scb-api.promrub.prom.co.th
 
 promrub-scb:
   ingress:
