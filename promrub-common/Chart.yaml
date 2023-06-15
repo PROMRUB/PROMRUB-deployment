@@ -9,8 +9,15 @@ version: 1.0.0
 appVersion: "1.0"
 
 dependencies:
+  ### SCB ###
   - name: "generic-app"
     alias: promrub-scb
     condition: promrub-scb.enabled
     repository: "https://charts.visonneau.fr/"
     version: "0.0.14"
+
+  - name: "postgresql"
+    alias: postgresql-scb
+    condition: postgresql-scb.enabled
+    repository: "https://charts.bitnami.com/bitnami"
+    version: "12.5.7"

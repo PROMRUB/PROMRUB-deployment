@@ -11,6 +11,15 @@ promrub-scb:
       name: asia-southeast1-docker.pkg.dev/promrub-personal-use/promrub/promrub-scb
     imagePullSecrets :
       - name: gcr-image-pull # TODO : use External-Secret to create this
+    volumes:
+      - name: appsetting
+        secret:
+          secretName: scb-appsetting
+          optional: false
+    volumeMounts:
+      - name: appsetting
+        mountPath: /app/appsettings.json
+        subPath: appsettings.json
 
   service:
     enabled: true
@@ -19,3 +28,12 @@ promrub-scb:
         targetPort: 80
         protocol: TCP
         name: http
+
+postgresql-scb:
+  enabled: true
+  fullnameOverride: postgresql-scb
+  auth:
+    database: scb
+    existingSecret: scb-postgres-secret
+    secretKeys:
+      adminPasswordKey: adminPasswordKey
