@@ -7,5 +7,6 @@ promrub-scb:
 
   pods:
     env:
-      - name: DUMMY
-        value: "8080"
+      # To solve ulimit(128) issue
+      - name: DOTNET_USE_POLLING_FILE_WATCHER
+        value: "true"
