@@ -9,6 +9,18 @@ version: 1.0.0
 appVersion: "1.0"
 
 dependencies:
+  ### Kong ###
+  - name: kong
+    version: "2.22.0"
+    repository: "https://charts.konghq.com"
+    condition: kong.enabled
+
+  - name: "generic-app"
+    alias: konga
+    condition: konga.enabled
+    repository: "https://charts.visonneau.fr/"
+    version: "0.0.14"
+
   ### SCB ###
   - name: "generic-app"
     alias: promrub-scb

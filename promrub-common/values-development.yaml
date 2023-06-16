@@ -1,5 +1,8 @@
 envAlias: development
-domain: scb-api.promrub-dev.prom.co.th
+domainScb: scb-api.promrub-dev.prom.co.th
+domainKonga: konga.promrub-dev.prom.co.th
+domainKong: api.promrub-dev.prom.co.th
+domainPub: promptrub-dev.com
 
 promrub-scb:
   ingress:
