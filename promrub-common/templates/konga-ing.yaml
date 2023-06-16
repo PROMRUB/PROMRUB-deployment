@@ -18,6 +18,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: kong-{{ .Values.env }}-konga
+                name: promrub-{{ .Values.envAlias }}-konga
                 port:
                   number: 80
