@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kong-config
+data:
+  kong.yml: |
+    _format_version: "3.0"
+    _transform: true
+
+    services:
+    - name: scb-service
+      url: http://promrub-{{ .Values.envAlias }}-promrub-scb/
+      routes:
+      - name: scb
+        strip_path: true
+        paths:
+        - /scb/
