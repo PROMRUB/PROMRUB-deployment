@@ -21,11 +21,6 @@ dependencies:
     repository: "https://charts.visonneau.fr/"
     version: "0.0.14"
 
-  - name: telegraf
-    version: "1.8.28"
-    repository: "https://helm.influxdata.com/"
-    condition: telegraf.enabled
-
   ### SCB ###
   - name: "generic-app"
     alias: promrub-scb
