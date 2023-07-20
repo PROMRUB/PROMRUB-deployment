@@ -18,6 +18,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: promjodd-{{ .Values.envAlias }}-pgweb
+                name: promrub-{{ .Values.envAlias }}-pgweb
                 port:
                   number: 80
