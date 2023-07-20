@@ -3,6 +3,7 @@ domainScb: scb-api.promrub.prom.co.th
 domainKonga: konga.promrub.prom.co.th
 domainKong: api.promrub.prom.co.th
 domainPub: promptrub.com
+domainPgAdmin: pgweb.promptrub.prom.co.th
 
 promrub-scb:
   ingress:

@@ -101,3 +101,12 @@ postgresql-scb:
     existingSecret: scb-postgres-secret
     secretKeys:
       adminPasswordKey: adminPasswordKey
+
+### PG Web ###
+pgweb:
+  #CREATE USER bank WITH PASSWORD 'xxxxx';
+  #GRANT ALL ON ALL TABLES IN SCHEMA public TO bank;
+  enabled: true
+  nameOverride: pgweb
+  ingress:
+    enabled: false
