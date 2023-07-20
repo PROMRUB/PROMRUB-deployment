@@ -1,4 +1,4 @@
 promrub-scb:
   pods:
     image:
-      tag: "main-bc777bd"
+      tag: "main-92e9ca4"

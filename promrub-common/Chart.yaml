@@ -28,8 +28,16 @@ dependencies:
     repository: "https://charts.visonneau.fr/"
     version: "0.0.14"
 
+  ### pgSQL ###
   - name: "postgresql"
     alias: postgresql-scb
     condition: postgresql-scb.enabled
     repository: "https://charts.bitnami.com/bitnami"
     version: "12.5.7"
+
+  ### PG Web - Use one for all PostgreSQL ###
+  - name: "pgweb"
+    alias: pgweb
+    condition: pgweb.enabled
+    repository: "https://charts.ectobit.com"
+    version: "0.1.8"
