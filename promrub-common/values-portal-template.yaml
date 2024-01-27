@@ -1,0 +1,4 @@
+portal-ui:
+  pods:
+    image:
+      tag: "<<image-tag>>"

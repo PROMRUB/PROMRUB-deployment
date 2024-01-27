@@ -41,3 +41,10 @@ dependencies:
     condition: pgweb.enabled
     repository: "https://charts.ectobit.com"
     version: "0.1.8"
+
+  ### Portal UI ###
+  - name: "generic-app"
+    alias: portal-ui
+    condition: portal-ui.enabled
+    repository: "https://charts.visonneau.fr/"
+    version: "0.0.14"
