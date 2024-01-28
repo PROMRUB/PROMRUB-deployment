@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: portal-ui-cert
+spec:
+  secretName: portal-ui-cert
+  dnsNames:
+    - {{ .Values.domainPortalUI }}
+  issuerRef:
+    name: lets-encrypt-issuer-prod
+    kind: ClusterIssuer
+    group: cert-manager.io
