@@ -1,4 +1,4 @@
 portal-ui:
   pods:
     image:
-      tag: "develop-0e5cd8a"
+      tag: "main-0a034b4"
