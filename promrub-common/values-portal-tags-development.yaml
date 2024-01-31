@@ -1,4 +1,4 @@
 portal-ui:
   pods:
     image:
-      tag: "main-d69c737"
+      tag: "develop-be580aa"
