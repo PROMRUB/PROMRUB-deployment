@@ -16,3 +16,13 @@ promrub-scb:
       # To solve ulimit(128) issue
       - name: DOTNET_USE_POLLING_FILE_WATCHER
         value: "true"
+
+promrub-api:
+  pods:
+    env:
+      # To solve ulimit(128) issue
+      - name: DOTNET_USE_POLLING_FILE_WATCHER
+        value: "true"
+
+      - name: ASPNETCORE_ENVIRONMENT
+        value: "Production"
