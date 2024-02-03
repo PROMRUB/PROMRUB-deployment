@@ -42,9 +42,9 @@ dependencies:
     repository: "https://charts.ectobit.com"
     version: "0.1.8"
 
-  ### Portal UI ###
+  ### Portal UI (payment-channel) ###
   - name: "generic-app"
-    alias: portal-ui
-    condition: portal-ui.enabled
+    alias: payment-ui
+    condition: payment-ui.enabled
     repository: "https://charts.visonneau.fr/"
     version: "0.0.14"

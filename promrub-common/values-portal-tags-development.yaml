@@ -1,4 +1,4 @@
-portal-ui:
+payment-ui:
   pods:
     image:
-      tag: "v0.0.1"
+      tag: "develop-a4f7780"

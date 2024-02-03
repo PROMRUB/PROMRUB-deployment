@@ -1,4 +1,4 @@
-portal-ui:
+payment-ui:
   pods:
     image:
       tag: "<<image-tag>>"

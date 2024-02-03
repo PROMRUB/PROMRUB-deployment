@@ -111,9 +111,9 @@ pgweb:
   ingress:
     enabled: false
 
-portal-ui:
+payment-ui:
   enabled: true
-  nameOverride: portal-ui
+  nameOverride: payment-ui
 
   podDisruptionBudget:
     enabled: false

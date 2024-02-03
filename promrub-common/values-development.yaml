@@ -4,7 +4,7 @@ domainKonga: konga.promrub-dev.prom.co.th
 domainKong: api.promrub-dev.prom.co.th
 domainPub: dev.promrub.com
 domainPgAdmin: pgweb.promptrub-dev.prom.co.th
-domainPortalUI: dev-payment-channel.promrub.com
+domainPaymentUI: dev-payment-channel.promrub.com
 
 promrub-scb:
   ingress:
