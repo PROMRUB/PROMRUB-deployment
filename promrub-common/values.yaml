@@ -158,10 +158,6 @@ promrub-api:
     #  - name: appsetting
     #    mountPath: /app/appsettings.json
     #    subPath: appsettings.json
-    env:
-      # To solve ulimit(128) issue
-      - name: DOTNET_USE_POLLING_FILE_WATCHER
-        value: "true"
 
   service:
     enabled: true
