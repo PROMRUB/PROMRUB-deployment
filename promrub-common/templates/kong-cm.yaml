@@ -16,9 +16,27 @@ data:
         paths:
         - /scb/
 
+    - name: promrub-api
+      url: http://promrub-{{ .Values.envAlias }}-promrub-api/
+      routes:
+      - name: promrub-api-v1
+        strip_path: true
+        paths:
+        - /v1/
+
     plugins:
     - name: http-log
       service: scb-service
+      config:
+        http_endpoint: http://logstash-http-to-kafka.analytic-{{ .Values.envAlias }}.svc.cluster.local:8080/
+        method: POST
+        timeout: 1000
+        keepalive: 1000
+        flush_timeout: 2
+        retry_count: 15
+
+    - name: http-log-2
+      service: promrub-api
       config:
         http_endpoint: http://logstash-http-to-kafka.analytic-{{ .Values.envAlias }}.svc.cluster.local:8080/
         method: POST
