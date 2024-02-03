@@ -132,3 +132,41 @@ payment-ui:
         targetPort: 80
         protocol: TCP
         name: http
+
+promrub-api:
+  enabled: true
+  nameOverride: promrub-api
+
+  ingress:
+    enabled: false
+
+  podDisruptionBudget:
+    enabled: false
+
+  pods:
+    controller: deployment
+    image:
+      name: asia-southeast1-docker.pkg.dev/promrub-personal-use/promrub/promrub-api
+    imagePullSecrets :
+      - name: gcr-image-pull # TODO : use External-Secret to create this
+    #volumes:
+    #  - name: appsetting
+    #    secret:
+    #      secretName: scb-appsetting
+    #      optional: false
+    #volumeMounts:
+    #  - name: appsetting
+    #    mountPath: /app/appsettings.json
+    #    subPath: appsettings.json
+    env:
+      # To solve ulimit(128) issue
+      - name: DOTNET_USE_POLLING_FILE_WATCHER
+        value: "true"
+
+  service:
+    enabled: true
+    ports:
+      - port: 80
+        targetPort: 80
+        protocol: TCP
+        name: http

@@ -5,6 +5,7 @@ domainKong: api.promrub.prom.co.th
 domainPub: promrub.com
 domainPgAdmin: pgweb.promptrub.prom.co.th
 domainPaymentUI: payment-channel.promrub.com
+domainPaymentAPI: single-payment-api.promrub.com
 
 promrub-scb:
   ingress:

@@ -1,0 +1,4 @@
+promrub-api:
+  pods:
+    image:
+      tag: "<<image-tag>>"

@@ -42,9 +42,16 @@ dependencies:
     repository: "https://charts.ectobit.com"
     version: "0.1.8"
 
-  ### Portal UI (payment-channel) ###
+  ### Payment UI (payment-channel) ###
   - name: "generic-app"
     alias: payment-ui
     condition: payment-ui.enabled
+    repository: "https://charts.visonneau.fr/"
+    version: "0.0.14"
+
+  ### Promrub API ###
+  - name: "generic-app"
+    alias: promrub-api
+    condition: promrub-api.enabled
     repository: "https://charts.visonneau.fr/"
     version: "0.0.14"
