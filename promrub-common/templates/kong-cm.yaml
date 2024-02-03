@@ -20,7 +20,7 @@ data:
       url: http://promrub-{{ .Values.envAlias }}-promrub-api/
       routes:
       - name: promrub-api-v1
-        strip_path: true
+        strip_path: false
         paths:
         - /v1/
 
