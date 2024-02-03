@@ -121,7 +121,7 @@ payment-ui:
   pods:
     controller: deployment
     image:
-      name: asia-southeast1-docker.pkg.dev/promrub-personal-use/promrub/promrub-portal-ui
+      name: asia-southeast1-docker.pkg.dev/promrub-personal-use/promrub/promrub-payment-ui
     imagePullSecrets :
       - name: gcr-image-pull # TODO : use External-Secret to create this
 
