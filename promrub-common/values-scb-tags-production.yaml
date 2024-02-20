@@ -1,4 +1,4 @@
 promrub-scb:
   pods:
     image:
-      tag: "v1.0.0.1"
+      tag: "v1.0.0.2"
