@@ -26,3 +26,31 @@ promrub-api:
 
       - name: ASPNETCORE_ENVIRONMENT
         value: "Production"
+
+      - name: IsDev
+        value: "false"
+
+      - name: PostgreSQL_Host
+        value: "postgresql-scb" #Use the same SCB host
+
+      - name: PostgreSQL_Database
+        value: "promrub"
+
+      - name: PostgreSQL_User
+        value: "postgres"
+
+      - name: PostgreSQL_Password
+        valueFrom:
+          secretKeyRef:
+            name: scb-postgres-secret #Use the same SCB host
+            key: adminPasswordKey
+            optional: false
+
+      - name: PaymentUrl
+        value: "https://payment-channel.promrub.com"
+
+      - name: SCBServicesUrl
+        value: "https://api.promrub.prom.co.th/scb/"
+
+      - name: SCBGenerateQRUrl
+        value: "v1/QRGenerate/CreateQR30Async"
