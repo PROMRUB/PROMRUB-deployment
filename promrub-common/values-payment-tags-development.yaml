@@ -1,4 +1,4 @@
 payment-ui:
   pods:
     image:
-      tag: "develop-415c7ae"
+      tag: "develop-8f8a112"
