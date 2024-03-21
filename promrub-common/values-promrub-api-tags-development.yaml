@@ -1,4 +1,4 @@
 promrub-api:
   pods:
     image:
-      tag: "develop-8d36e1f"
+      tag: "develop-f68769c"
