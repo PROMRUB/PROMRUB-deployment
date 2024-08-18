@@ -166,3 +166,25 @@ promrub-api:
         targetPort: 80
         protocol: TCP
         name: http
+
+payment-react-ui:
+  enabled: true
+  nameOverride: payment-react-ui
+
+  podDisruptionBudget:
+    enabled: false
+
+  pods:
+    controller: deployment
+    image:
+      name: asia-southeast1-docker.pkg.dev/promrub-personal-use/promrub/promrub-payment-react-ui
+    imagePullSecrets :
+      - name: gcr-image-pull # TODO : use External-Secret to create this
+
+  service:
+    enabled: true
+    ports:
+      - port: 80
+        targetPort: 80
+        protocol: TCP
+        name: http

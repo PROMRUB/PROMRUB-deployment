@@ -6,6 +6,7 @@ domainPub: dev.promrub.com
 domainPgAdmin: pgweb.promptrub-dev.prom.co.th
 domainPaymentUI: dev-payment-channel.promrub.com
 domainPaymentAPI: dev-single-payment-api.promrub.com
+domainPaymentReactUI: finance-dev.prom.co.th
 
 promrub-scb:
   ingress:

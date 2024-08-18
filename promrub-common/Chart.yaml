@@ -55,3 +55,10 @@ dependencies:
     condition: promrub-api.enabled
     repository: "https://charts.visonneau.fr/"
     version: "0.0.14"
+
+  ### payment-react-ui ###
+  - name: "generic-app"
+    alias: payment-react-ui
+    condition: payment-react-ui.enabled
+    repository: "https://charts.visonneau.fr/"
+    version: "0.0.14"
