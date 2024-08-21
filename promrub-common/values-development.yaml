@@ -28,6 +28,9 @@ promrub-api:
       - name: ASPNETCORE_ENVIRONMENT
         value: "Development"
 
+      - name: HTTP_PORTS
+        value: "80"
+
       - name: IsDev
         value: "true"
 
