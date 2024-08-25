@@ -1,4 +1,4 @@
 payment-react-ui:
   pods:
     image:
-      tag: "develop-c6433c3"
+      tag: "develop-1672548"
