@@ -63,7 +63,7 @@ promrub-api:
         valueFrom:
           secretKeyRef:
             name: promrub-api-secret
-            key: adminPasswordKey
+            key: ERP_EMAIL
             optional: false
 
       - name: QR_Action
