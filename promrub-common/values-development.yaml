@@ -58,3 +58,13 @@ promrub-api:
 
       - name: SCBGenerateQRUrl
         value: "v1/QRGenerate/CreateQR30Async"
+
+      - name: ERP_EMAIL
+        valueFrom:
+          secretKeyRef:
+            name: promrub-api-secret
+            key: adminPasswordKey
+            optional: false
+
+      - name: QR_Action
+        value: "https://sales1-dev.prom.co.th/"
