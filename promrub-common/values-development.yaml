@@ -67,4 +67,4 @@ promrub-api:
             optional: false
 
       - name: QR_Action
-        value: "https://sales1-dev.prom.co.th/"
+        value: "https://sales-dev1.prom.co.th/"
